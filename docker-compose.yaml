@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  real-estate-app:
+    container_name: real-estate-app
+    build:
+      context: ./real-estate-app
+      dockerfile: Dockerfile
+    volumes:
+      - ./real-estate-app:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
