@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   real-estate-app:
-    container_name: real-estate-app
+    container_name: real-estate-app-container
     build:
       context: ./real-estate-app
       dockerfile: Dockerfile
